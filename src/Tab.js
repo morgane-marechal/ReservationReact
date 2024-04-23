@@ -7,8 +7,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import CalendarPage from './CalendarPage.js';
 import TimeContainer from './TimeContainer.js';
 import ListeReservations from './fetchReservations.js';
-
-
+import FormReservation from './FormReservation.js';
 import './App.css';
 
 
@@ -35,19 +34,27 @@ function TabComponent() {
     <Tab>Choisir un jour</Tab>
     <Tab >Choisir une heure</Tab>
     <Tab >Nombre de personnes</Tab>
-    <Tab >Choisir une table</Tab>
-    <Tab isDisabled>Finalisation</Tab>
+    <Tab >Finalisation</Tab>
 
   </TabList>
   <TabPanels>
     <TabPanel>
       <CalendarPage />
     </TabPanel>
+
     <TabPanel>
       <TimeContainer/>
     </TabPanel>
+    
     <TabPanel>
     <ListeReservations />
+    </TabPanel>
+
+    <TabPanel>
+    <FormReservation/>
+    </TabPanel>
+
+    <TabPanel>
     </TabPanel>
   </TabPanels>
 </Tabs>
