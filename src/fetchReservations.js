@@ -38,12 +38,7 @@ const ListeReservations = () => {
       <p>Jour : {formatDate(oneResa.reserveddate)}</p>
      <p>Heure : {oneResa.reservedtime}</p>
 </div>
-
-
-
-
-
-      ))}
+))}
     </div>
   );
 };

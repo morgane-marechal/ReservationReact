@@ -8,6 +8,8 @@ import CalendarPage from './CalendarPage.js';
 import TimeContainer from './TimeContainer.js';
 import ListeReservations from './fetchReservations.js';
 import FormReservation from './FormReservation.js';
+import AlertDispo from './AlertDispo.js';
+import GuestsSelection from './GuestsSelection.js';
 import './App.css';
 
 
@@ -47,11 +49,13 @@ function TabComponent() {
     </TabPanel>
     
     <TabPanel>
+    <GuestsSelection />
     <ListeReservations />
     </TabPanel>
 
     <TabPanel>
     <FormReservation/>
+    <AlertDispo />
     </TabPanel>
 
     <TabPanel>

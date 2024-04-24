@@ -83,6 +83,18 @@ body, html {
   text-transform: uppercase;
 }
 
+.guestsNumber{
+  margin : 0% 0%;
+  padding : 30px;
+  width:50%;
+  font-size: 1.6rem;
+  display: flex;
+  background-color: rgba(226, 199, 199, 0.1);
+  align-items: flex-start;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .timeContainer Button{
 width: 100px;
 margin: 20px 20px;
@@ -113,6 +125,13 @@ font-size: 1.6rem;
 
 .card{
   width:200px;
+  padding: 10px;
+  margin : 10px 5px;
+  background-color: aliceblue;
+}
+
+.cardCheckBooking{
+  width:250px;
   padding: 10px;
   margin : 10px 5px;
   background-color: aliceblue;

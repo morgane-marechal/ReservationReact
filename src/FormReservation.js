@@ -2,19 +2,18 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 
 const FormReservation = () => {
-  const [success, setSuccess] = useState([]);
+  const [success, setSuccess] = useState(['']); //à changer quand on fera venir les infos de reservation
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-
     const newReservation = {
-      email: "mamima@proton.net",
-      name: 'Martine Lequin',
-      customernumber: 5,
+      email: "apresclass@proton.net",
+      name: 'Laclasse Parfaite',
+      customernumber: 3,
       date: '2023-04-22',
       time: '13:00:00'
     };
+
     try {
       const response = await fetch('http://localhost:3001/createReservation', {
         method: 'POST',
@@ -23,14 +22,11 @@ const FormReservation = () => {
         },
         body: JSON.stringify(newReservation)
       });
-
       if (!response.ok) {
         throw new Error('Failed to create reservation');
       }
-
+      setSuccess('Réservation au nom de '+newReservation.name+ ' le '+ newReservation.date+' à '+newReservation.time)
       console.log('vous avez réservé pour '+newReservation.name+ ' le '+ newReservation.date+' à '+newReservation.time);
-      setSuccess('Vous avez réservé au nom de '+newReservation.name+ ' le '+ newReservation.date+' à '+newReservation.time)
-
     } catch (error) {
       console.error('Error creating reservation:', error);
       // Gérer les erreurs
