@@ -7,7 +7,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import CalendarPage from './CalendarPage.js';
 import TimeContainer from './TimeContainer.js';
 import ListeReservations from './fetchReservations.js';
-import FormReservation from './FormReservation.js';
+import FormReservation from './FormReservation.jsx';
 import AlertDispo from './AlertDispo.js';
 import GuestsSelection from './GuestsSelection.js';
 import './App.css';
@@ -21,6 +21,7 @@ function TabComponent() {
     // })
 
     const [tabIndex, setTabIndex] = useState(0)
+
 
     const handleSliderChange = (event) => {
       setTabIndex(parseInt(event.target.value, 10))
