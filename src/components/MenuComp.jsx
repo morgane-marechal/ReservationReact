@@ -1,31 +1,37 @@
-import * as React from "react";
-import Calendar from "react-calendar";
-import { useState } from "react";
-import ".././App.css";
-import { Text, Input, Button } from "@chakra-ui/react";
+
+import * as React from 'react';
+import Calendar from 'react-calendar';
+import { useState } from 'react';
+import { Text,Input, Button} from '@chakra-ui/react';
 import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from "@chakra-ui/react";
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    MenuItemOption,
+    MenuGroup,
+    MenuOptionGroup,
+    MenuDivider,
+  } from '@chakra-ui/react';
+
+  import '.././App.css';
+
 
 function MenuContainer() {
+
   return (
     <div className="MenuContaineronent">
-      <Menu>
-        <MenuButton as={Button}>Réservez une table !</MenuButton>
+    <Menu>
+        <MenuButton as={Button} >
+            Réservez une table !
+        </MenuButton>
         <MenuList>
-          <MenuItem>Réservez !</MenuItem>
-          <MenuItem>Notre carte</MenuItem>
-          <MenuItem>Faites-vous livrez !</MenuItem>
-          <MenuItem>Contact</MenuItem>
+            <MenuItem>Réservez !</MenuItem>
+            <MenuItem>Notre carte</MenuItem>
+            <MenuItem>Faites-vous livrez !</MenuItem>
+            <MenuItem>Contact</MenuItem>
         </MenuList>
-      </Menu>
+    </Menu>
     </div>
   );
 }

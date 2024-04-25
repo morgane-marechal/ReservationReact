@@ -1,58 +1,52 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import ".././App.css";
+import React from 'react';
+import { useState, useEffect } from 'react';
 
 const FormReservation = () => {
-  const [success, setSuccess] = useState([""]); //à changer quand on fera venir les infos de reservation
+  const [success, setSuccess] = useState(['']); //à changer quand on fera venir les infos de reservation
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    // const newReservation = {
+    //   email: "newmachst@proton.net",
+    //   name: 'Test truc',
+    //   customernumber: 6,
+    //   date: '2023-04-22',
+    //   time: '13:00:00'
+    // };
+
     const newReservation = {
-      email: "kukus@proton.net",
-      name: "Hello World",
-      customernumber: 8,
-      date: "2023-05-22",
-      time: "16:00:00",
+      email: "eudinbourd@proton.net",
+      name: 'Jean Eude',
+      customernumber: localStorage.getItem('guestNumber'),
+      date: localStorage.getItem('date'),
+      time: localStorage.getItem('time')
     };
 
     try {
-      const response = await fetch("http://localhost:3001/createReservation", {
-        method: "POST",
+      const response = await fetch('http://localhost:3001/createReservation', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(newReservation),
+        body: JSON.stringify(newReservation)
       });
       if (!response.ok) {
-        throw new Error("Failed to create reservation");
+        throw new Error('Failed to create reservation');
       }
-      setSuccess(
-        "Réservation au nom de " +
-          newReservation.name +
-          " le " +
-          newReservation.date +
-          " à " +
-          newReservation.time
-      );
-      console.log(
-        "vous avez réservé pour " +
-          newReservation.name +
-          " le " +
-          newReservation.date +
-          " à " +
-          newReservation.time
-      );
+      setSuccess('Réservation au nom de '+newReservation.name+ ' le '+ newReservation.date+' à '+newReservation.time)
+      console.log('vous avez réservé pour '+newReservation.name+ ' le '+ newReservation.date+' à '+newReservation.time);
     } catch (error) {
-      console.error("Error creating reservation:", error);
+      console.error('Error creating reservation:', error);
       // Gérer les erreurs
     }
   };
+  
 
   return (
     <div className="formPage">
       <span>Est-ce que ces informations sont correctes ?</span>
       <div>{success}</div>
-      <form className="formPage" onSubmit={handleSubmit}>
+      <form  className="formPage" onSubmit={handleSubmit}>
         <button type="submit">Valider la réservation</button>
       </form>
     </div>
