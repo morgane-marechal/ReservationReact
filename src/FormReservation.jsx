@@ -7,9 +7,9 @@ const FormReservation = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const newReservation = {
-      email: "apresclass@proton.net",
-      name: 'Laclasse Parfaite',
-      customernumber: 3,
+      email: "newtest@proton.net",
+      name: 'Jean Test',
+      customernumber: 6,
       date: '2023-04-22',
       time: '13:00:00'
     };
