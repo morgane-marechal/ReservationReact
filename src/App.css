@@ -1,24 +1,24 @@
 .App {
   text-align: center;
-  height:screen;
-
+  height: screen;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
-.bodyContainer{
-    /* The image used */
-    background-image: url(./image/background_cake.jpg);
+.bodyContainer {
+  /* The image used */
+  background-image: url(./image/background_cake.jpg);
 
-    /* Full height */
-    height: 100vh; 
+  /* Full height */
+  height: 100vh;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {
@@ -56,24 +56,24 @@ body, html {
   }
 }
 
-.CalendarPage{
-  margin : 0% 2%;
-  padding : 20px;
-  width:100%;
+.CalendarPage {
+  margin: 0% 2%;
+  padding: 20px;
+  width: 100%;
 }
-.react-calendar{
+.react-calendar {
   padding: 30px !important;
   font-size: 1.4rem !important;
-  width:50% !important;
+  width: 50% !important;
   background-color: rgba(226, 199, 199, 0.1) !important;
   color: rgb(151, 217, 219) !important;
   border: none !important;
 }
 
-.timeContainer{
-  margin : 0% 0%;
-  padding : 30px;
-  width:50%;
+.timeContainer {
+  margin: 0% 0%;
+  padding: 30px;
+  width: 50%;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -83,10 +83,10 @@ body, html {
   text-transform: uppercase;
 }
 
-.guestsNumber{
-  margin : 0% 0%;
-  padding : 30px;
-  width:50%;
+.guestsNumber {
+  margin: 0% 0%;
+  padding: 30px;
+  width: 50%;
   font-size: 1.6rem;
   display: flex;
   background-color: rgba(226, 199, 199, 0.1);
@@ -95,56 +95,51 @@ body, html {
   text-transform: uppercase;
 }
 
-.timeContainer Button{
-width: 100px;
-margin: 20px 20px;
-font-size: 1.6rem;
+.timeContainer Button {
+  width: 100px;
+  margin: 20px 20px;
+  font-size: 1.6rem;
 }
 
-.lunchTime, .eveningTime{
-  margin:30px 0px;
+.lunchTime,
+.eveningTime {
+  margin: 30px 0px;
   text-align: left;
 }
 
-
-
-
-
-
-
 /*for list reservations _________________________*/
 
-.cardContainer{
+.cardContainer {
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.5);
-  padding:10px;
+  padding: 10px;
   border-radius: 2px;
   box-shadow: 2px 2px 2px #61dafb;
 }
 
-.card{
-  width:200px;
+.card {
+  width: 200px;
   padding: 10px;
-  margin : 10px 5px;
+  margin: 10px 5px;
   background-color: aliceblue;
 }
 
-.cardCheckBooking{
-  width:250px;
+.cardCheckBooking {
+  width: 250px;
   padding: 10px;
-  margin : 10px 5px;
+  margin: 10px 5px;
   background-color: aliceblue;
 }
 
 /*for form________________________*/
 
-.formPage{
+.formPage {
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.5);
-  padding:10px;
-  width:30%;
+  padding: 10px;
+  width: 30%;
   border-radius: 2px;
   box-shadow: 2px 2px 2px #61dafb;
 }
