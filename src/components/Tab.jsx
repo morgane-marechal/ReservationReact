@@ -4,13 +4,13 @@ import Calendar from 'react-calendar';
 import { useState } from 'react';
 import { Text,Input } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
-import CalendarPage from './CalendarPage.js';
-import TimeContainer from './TimeContainer.js';
-import ListeReservations from './fetchReservations.js';
+import CalendarPage from './CalendarPage.jsx';
+import TimeContainer from './TimeContainer.jsx';
+import ListeReservations from './fetchReservations.jsx';
 import FormReservation from './FormReservation.jsx';
-import AlertDispo from './AlertDispo.js';
-import GuestsSelection from './GuestsSelection.js';
-import './App.css';
+import AlertDispo from './AlertDispo.jsx';
+import GuestsSelection from './GuestsSelection.jsx';
+import '.././App.css';
 
 
 function TabComponent() {
