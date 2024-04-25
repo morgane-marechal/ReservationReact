@@ -6,12 +6,20 @@ const FormReservation = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    // const newReservation = {
+    //   email: "newmachst@proton.net",
+    //   name: 'Test truc',
+    //   customernumber: 6,
+    //   date: '2023-04-22',
+    //   time: '13:00:00'
+    // };
+
     const newReservation = {
-      email: "newtest@proton.net",
-      name: 'Jean Test',
-      customernumber: 6,
-      date: '2023-04-22',
-      time: '13:00:00'
+      email: "eudinbourd@proton.net",
+      name: 'Jean Eude',
+      customernumber: localStorage.getItem('guestNumber'),
+      date: localStorage.getItem('date'),
+      time: localStorage.getItem('time')
     };
 
     try {

@@ -22,6 +22,7 @@ function TabComponent() {
 
     const [tabIndex, setTabIndex] = useState(0)
 
+
     const handleSliderChange = (event) => {
       setTabIndex(parseInt(event.target.value, 10))
     }
