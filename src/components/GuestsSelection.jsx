@@ -18,7 +18,7 @@ function GuestsSelection() {
   const guests = [1,2,3,4,5,6,7,8,9,10,11, '12+']
 return (
     <div className="timeContainer">
-        <Text color='white'>Nombre de personnes</Text>
+        {/* <Text color='white'>Nombre de personnes</Text> */}
         <div className="gestsNumber">
             {guests.map((oneGuestNumber,index) => (
             <Button  value = {oneGuestNumber}  onClick={() => addGuest(oneGuestNumber)}  bgGradient={[
