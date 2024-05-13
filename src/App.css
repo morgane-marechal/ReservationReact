@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height:screen;
+  background-color: #282c34;
 
 }
 
@@ -11,7 +12,9 @@ body, html {
 }
 .bodyContainer{
     /* The image used */
-    background-image: url(./image/background_cake.jpg);
+    /* background-image: url(./image/background_cake.jpg); */
+    background-color: #282c34;
+
 
     /* Full height */
     height: 100vh; 
@@ -172,6 +175,7 @@ font-size: 1.6rem;
   flex-direction: column;
   align-items: center; 
   justify-content: center;
+  color: beige;
 }
 
 .stepper-content {
@@ -179,6 +183,10 @@ font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center; 
+}
+
+.stepper-content button {
+  color:beige;
 }
 
 .Step {

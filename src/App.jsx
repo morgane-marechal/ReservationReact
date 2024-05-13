@@ -40,7 +40,7 @@ function App() {
         <MenuContainer />
       </header>
 
-      <body className="bodyContainer" style={{ backgroundImage: `url(${background})`}}>
+      <body className="bodyContainer">
         <StepperComponent />
       </body>
     </div>
