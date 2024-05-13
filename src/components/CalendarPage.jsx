@@ -31,7 +31,7 @@ function CalendarPage() {
 
   return (
     <div className="CalendarPage">
-        <Text>Choisir une date</Text>
+        {/* <Text>Choisir une date</Text> */}
       <Calendar onChange={onChange} value={value} />
     </div>
   );
