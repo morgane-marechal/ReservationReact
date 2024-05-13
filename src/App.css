@@ -7,10 +7,11 @@
 body, html {
   height: 100%;
   margin: 0;
+
 }
 .bodyContainer{
     /* The image used */
-    /* background-image: url(./image/background_cake.jpg); */
+    background-image: url(./image/background_cake.jpg);
 
     /* Full height */
     height: 100vh; 
@@ -19,27 +20,11 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+
 }
 
-.stepper-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 100vh;
-}
-
-.stepper-container-content {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-}
 
 .App-logo {
   height: 40vmin;
@@ -84,7 +69,7 @@ body, html {
 .react-calendar{
   padding: 30px !important;
   font-size: 1.4rem !important;
-  width:50% !important;
+  width:100% !important;
   background-color: rgba(226, 199, 199, 0.1) !important;
   color: rgb(151, 217, 219) !important;
   border: none !important;
@@ -93,7 +78,7 @@ body, html {
 .timeContainer{
   margin : 0% 0%;
   padding : 30px;
-  width:50%;
+  width:100%;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -106,7 +91,7 @@ body, html {
 .guestsNumber{
   margin : 0% 0%;
   padding : 30px;
-  width:50%;
+  width:80%;
   font-size: 1.6rem;
   display: flex;
   background-color: rgba(226, 199, 199, 0.1);
@@ -167,4 +152,54 @@ font-size: 1.6rem;
   width:30%;
   border-radius: 2px;
   box-shadow: 2px 2px 2px #61dafb;
+}
+
+
+
+/*for stepper*/
+
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  width: 80%;
+  margin: auto;
+}
+
+.stepper-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.stepper-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.Step {
+  display: flex;
+  align-items: center; 
+  height: 50px; 
+  width: 100%; 
+}
+
+.StepIndicator {
+  margin-right: 10px; 
+}
+
+.StepTitle {
+  font-size: 1rem; 
+}
+
+.StepSeparator {
+  flex: 1; 
+}
+
+.chakra-step__separator {
+  background-color: transparent !important; 
 }
