@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Text,Input, Button } from '@chakra-ui/react'
 
-import './App.css';
+import '.././App.css';
 import 'react-calendar/dist/Calendar.css';
 
 
@@ -19,7 +19,7 @@ function TimeContainer() {
 
   return (
 <div className="timeContainer">
-    <Text color='white' fontSize='4xl'>Choisir une heure</Text>
+    {/* <Text color='white' fontSize='4xl'>Choisir une heure</Text> */}
 <div className = "lunchTime">
     <Text color='white'>Réserver pour l'heure du déjeuner</Text>
     <Button value="12:00" onClick={() => addTime("12:00")} bgGradient={[

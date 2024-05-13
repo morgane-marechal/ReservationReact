@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { Text, Input, Button } from '@chakra-ui/react';
 
-import './App.css';
+import '.././App.css';
 import 'react-calendar/dist/Calendar.css';
 
 function AlertDispo() {

@@ -1,11 +1,12 @@
 import './App.css';
-import ListeReservations from './fetchReservations.js';
+import ListeReservations from './components/fetchReservations.jsx';
 import { useState, useEffect } from 'react';
-import CalendarPage from './CalendarPage.js';
+import CalendarPage from './components/CalendarPage.jsx';
 import { Progress } from '@chakra-ui/react';
-import MenuContainer from './MenuComp.js';
+import MenuContainer from './components/MenuComp.jsx';
 import background from "./image/background_cake.jpg";
-import TabComponent from './Tab.js';
+import TabComponent from './components/Tab.jsx';
+import StepperComponent from './components/Stepper.jsx';
 import { useRef } from 'react';
 
 function App() {
@@ -39,8 +40,8 @@ function App() {
         <MenuContainer />
       </header>
 
-      <body className="bodyContainer" style={{ backgroundImage: `url(${background})`}}>
-        <TabComponent />
+      <body className="bodyContainer">
+        <StepperComponent />
       </body>
     </div>
   );

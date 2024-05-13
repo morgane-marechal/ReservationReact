@@ -14,7 +14,7 @@ import {
     MenuDivider,
   } from '@chakra-ui/react';
 
-import './App.css';
+  import '.././App.css';
 
 
 function MenuContainer() {

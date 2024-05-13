@@ -4,7 +4,8 @@ import Calendar from 'react-calendar';
 import { useState } from 'react';
 import { Text,Input } from '@chakra-ui/react'
 
-import './App.css';
+import '.././App.css';
+
 import 'react-calendar/dist/Calendar.css';
 
 
@@ -30,7 +31,7 @@ function CalendarPage() {
 
   return (
     <div className="CalendarPage">
-        <Text>Choisir une date</Text>
+        {/* <Text>Choisir une date</Text> */}
       <Calendar onChange={onChange} value={value} />
     </div>
   );
