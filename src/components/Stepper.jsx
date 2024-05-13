@@ -40,25 +40,26 @@ function StepperComponent() {
     };
 
     return (
-        <Stepper index={activeStep} orientation='horizontale' >
-            {steps.map((step, index) => (
-                <div className='stepper-container'>
-                    <Step key={index} >
-                        <StepIndicator>
-                            <StepStatus
-                                complete={<StepIcon />}
-                                incomplete={<StepNumber />}
-                                active={<StepNumber />}
-                            />
-                        </StepIndicator>
+        <div className="stepper-container">
+            <div className="stepper-menu">
+                <Stepper index={activeStep} orientation='verticale'>
+                    {steps.map((step, index) => (
+                        <Step key={index} >
+                            <StepIndicator>
+                                <StepStatus
+                                    complete={<StepIcon />}
+                                    incomplete={<StepNumber />}
+                                    active={<StepNumber />}
+                                />
+                            </StepIndicator>
 
-                        <StepTitle>{step.title}</StepTitle>
-                        <StepSeparator />
-                    </Step>
-                </div>
-            ))}
-
-            <div className='stepper-container-content'>
+                            <StepTitle>{step.title}</StepTitle>
+                            <StepSeparator />
+                        </Step>   
+                    ))}
+                </Stepper>
+            </div>
+            <div className="stepper-content">
                 {activeStep === 0 && (
                     <CalendarPage />
                 )}
@@ -80,7 +81,7 @@ function StepperComponent() {
                 <button onClick={goToPrevious}>Précédent</button>
                 <button onClick={handleNext}>Suivant</button>
             </div>
-        </Stepper>
+        </div>
     );
 }
 
