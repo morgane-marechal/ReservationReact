@@ -69,7 +69,7 @@ function StepperComponent() {
                 {activeStep === 2 && (
                     <>
                         <GuestsSelection />
-                        <ListeReservations />
+                        {/* <ListeReservations /> */}
                     </>
                 )}
                 {activeStep === 3 && (
@@ -78,8 +78,12 @@ function StepperComponent() {
                         <AlertDispo />
                     </>
                 )}
-                <button onClick={goToPrevious}>Précédent</button>
-                <button onClick={handleNext}>Suivant</button>
+                 <div className="stepper-buttons">
+                    <button onClick={goToPrevious}>Précédent</button>
+                    {activeStep < steps.length - 1 && (
+                        <button onClick={handleNext}>Suivant</button>
+                    )}
+                </div>
             </div>
         </div>
     );
