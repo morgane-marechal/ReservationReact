@@ -35,7 +35,7 @@ function AlertDispo() {
 
     return (
         <div className="cardCheckBooking">
-            <Button colorScheme='teal' size='xs' onClick={checkBooked}>{message}</Button>
+            <Button className="cardCheckBooking__button" size='xs' onClick={checkBooked}>{message}</Button>
         </div>
     );
 }

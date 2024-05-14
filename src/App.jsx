@@ -40,7 +40,7 @@ function App() {
         <MenuContainer />
       </header>
 
-      <body className="bodyContainer">
+      <body className="bodyContainer" style={{ back: `url(${background})`}}>
         <StepperComponent />
       </body>
     </div>
