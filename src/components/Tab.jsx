@@ -66,8 +66,4 @@
 //   );
 // }
 
-<<<<<<< HEAD
-export default TabComponent;
-=======
-// export default TabComponent;
->>>>>>> a8032cf6eba4dc9b94b7d3033453f9948757cd87
+//export default TabComponent;

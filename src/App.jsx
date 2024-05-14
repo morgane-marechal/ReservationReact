@@ -5,7 +5,7 @@ import CalendarPage from './components/CalendarPage.jsx';
 import { Progress } from '@chakra-ui/react';
 import MenuContainer from './components/MenuComp.jsx';
 import background from "./image/background_cake.jpg";
-import TabComponent from './components/Tab.jsx';
+//import TabComponent from './components/Tab.jsx';
 import StepperComponent from './components/Stepper.jsx';
 import { useRef } from 'react';
 

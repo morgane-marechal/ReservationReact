@@ -1,12 +1,6 @@
 .App {
   text-align: center;
-<<<<<<< HEAD
   height: screen;
-=======
-  height:screen;
-  background-color: #282c34;
-
->>>>>>> a8032cf6eba4dc9b94b7d3033453f9948757cd87
 }
 
 body,
@@ -15,35 +9,17 @@ html {
   margin: 0;
 
 }
-<<<<<<< HEAD
 .bodyContainer {
   /* The image used */
   background-image: url(./image/background_cake.jpg);
-=======
-.bodyContainer{
-    /* The image used */
-    /* background-image: url(./image/background_cake.jpg); */
-    background-color: #282c34;
-
->>>>>>> a8032cf6eba4dc9b94b7d3033453f9948757cd87
 
   /* Full height */
   height: 100vh;
 
-<<<<<<< HEAD
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-=======
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-
->>>>>>> a8032cf6eba4dc9b94b7d3033453f9948757cd87
 }
 
 
@@ -90,27 +66,16 @@ html {
 .react-calendar {
   padding: 30px !important;
   font-size: 1.4rem !important;
-<<<<<<< HEAD
   width: 50% !important;
-=======
-  width:100% !important;
->>>>>>> a8032cf6eba4dc9b94b7d3033453f9948757cd87
   background-color: rgba(226, 199, 199, 0.1) !important;
   color: rgb(151, 217, 219) !important;
   border: none !important;
 }
 
-<<<<<<< HEAD
 .timeContainer {
   margin: 0% 0%;
   padding: 30px;
   width: 50%;
-=======
-.timeContainer{
-  margin : 0% 0%;
-  padding : 30px;
-  width:100%;
->>>>>>> a8032cf6eba4dc9b94b7d3033453f9948757cd87
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -120,17 +85,10 @@ html {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
 .guestsNumber {
   margin: 0% 0%;
   padding: 30px;
   width: 50%;
-=======
-.guestsNumber{
-  margin : 0% 0%;
-  padding : 30px;
-  width:80%;
->>>>>>> a8032cf6eba4dc9b94b7d3033453f9948757cd87
   font-size: 1.6rem;
   display: flex;
   background-color: rgba(226, 199, 199, 0.1);
