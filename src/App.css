@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   height:screen;
-  background-color: #282c34;
+  background-color: black;
 
 }
 
@@ -12,20 +12,23 @@ body, html {
 }
 .bodyContainer{
     /* The image used */
-    /* background-image: url(./image/background_cake.jpg); */
-    background-color: #282c34;
+    background-image: url(./image/restaurant.jpg); 
+    background-color: black;
 
-
-    /* Full height */
     height: 100vh; 
 
-    /* Center and scale the image nicely */
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
+    background-size: 50%;
+}
 
+.chakra-menu__menu-button {
+  background-color: #282c34 !important; 
+  color: white !important; 
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  
 }
 
 
@@ -69,12 +72,28 @@ body, html {
   padding : 20px;
   width:100%;
 }
+
+.react-calendar__tile--now {
+  background: #282c34 !important;
+  color: white !important;
+}
+
+.react-calendar__tile--active:enabled:focus, .react-calendar__tile--active{
+  background: beige !important;
+  color: black !important;
+}
+
+.react-calendar__tile:enabled:hover{
+  background: beige !important;
+  color: black !important;
+}
+
 .react-calendar{
   padding: 30px !important;
   font-size: 1.4rem !important;
   width:100% !important;
   background-color: rgba(226, 199, 199, 0.1) !important;
-  color: rgb(151, 217, 219) !important;
+  color: beige !important;
   border: none !important;
 }
 
@@ -90,6 +109,7 @@ body, html {
   font-weight: 500;
   text-transform: uppercase;
 }
+
 
 .guestsNumber{
   margin : 0% 0%;
@@ -128,35 +148,44 @@ font-size: 1.6rem;
   background-color: rgba(255, 255, 255, 0.5);
   padding:10px;
   border-radius: 2px;
-  box-shadow: 2px 2px 2px #61dafb;
 }
 
 .card{
   width:200px;
   padding: 10px;
   margin : 10px 5px;
-  background-color: aliceblue;
+  background-color: grey;
 }
 
 .cardCheckBooking{
-  width:250px;
+  /* width:250px; */
   padding: 10px;
   margin : 10px 5px;
-  background-color: aliceblue;
+  background-color: transparent;
+  border: 1px solid beige;
+}
+
+.cardCheckBooking__button{
+  color: beige !important;
+  border: 1px solid beige !important;
+  background-color: black !important;
 }
 
 /*for form________________________*/
 
 .formPage{
   display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding:10px;
-  width:30%;
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px #61dafb;
+  flex-wrap: nowrap;
+  padding: 10px;
+  width: 50%;
+  border: 1px solid beige;
+  color: beige;
+  flex-direction: column;
+  align-content: center;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
-
 
 
 /*for stepper*/
@@ -187,6 +216,16 @@ font-size: 1.6rem;
 
 .stepper-content button {
   color:beige;
+  border: 1px solid beige;
+  padding: 7px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.stepper-content button:hover {
+  background-color: beige;
+  color: black;
 }
 
 .Step {
@@ -210,4 +249,13 @@ font-size: 1.6rem;
 
 .chakra-step__separator {
   background-color: transparent !important; 
+}
+
+.css-kq5oaw[data-status=complete] {
+  background-color: #66101F !important; 
+  color: black !important; 
+}
+
+.css-kq5oaw[data-status=active] {
+  border-color: #66101F !important;
 }

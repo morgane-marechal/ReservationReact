@@ -21,11 +21,7 @@ return (
         {/* <Text color='white'>Nombre de personnes</Text> */}
         <div className="gestsNumber">
             {guests.map((oneGuestNumber,index) => (
-            <Button  value = {oneGuestNumber}  onClick={() => addGuest(oneGuestNumber)}  bgGradient={[
-            'linear(to-tr, teal.300, yellow.400)',
-            'linear(to-t, blue.200, teal.500)',
-            'linear(to-b, orange.100, teal.300)',
-            ]} variant='ghost'>
+            <Button  value = {oneGuestNumber}  onClick={() => addGuest(oneGuestNumber)} variant='ghost'>
                 {oneGuestNumber}
             </Button>
         ))}
