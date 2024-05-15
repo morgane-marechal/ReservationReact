@@ -2,6 +2,7 @@
 import * as React from 'react';
 import Calendar from 'react-calendar';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Text,Input, Button} from '@chakra-ui/react';
 import {
     Menu,
@@ -18,6 +19,7 @@ import {
 
 
 function MenuContainer() {
+  const navigate = useNavigate();
 
   return (
     <div className="MenuContaineronent">
@@ -29,6 +31,7 @@ function MenuContainer() {
             <MenuItem>Réservez !</MenuItem>
             <MenuItem>Notre carte</MenuItem>
             <MenuItem>Faites-vous livrez !</MenuItem>
+            <MenuItem onClick={() => navigate('/login')}>Connectez-vous</MenuItem>
             <MenuItem>Contact</MenuItem>
         </MenuList>
     </Menu>

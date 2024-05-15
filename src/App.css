@@ -1,25 +1,38 @@
 .App {
   text-align: center;
-  height: screen;
+  height:screen;
+  background-color: black;
+
 }
 
-body,
-html {
+body, html {
   height: 100%;
   margin: 0;
 
 }
-.bodyContainer {
-  /* The image used */
-  background-image: url(./image/background_cake.jpg);
 
-  /* Full height */
-  height: 100vh;
+.errorLabel {
+  color: red;
+}
+.bodyContainer{
+    /* The image used */
+    background-image: url(./image/restaurant.jpg); 
+    background-color: black;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 100vh; 
+
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.chakra-menu__menu-button {
+  background-color: #282c34 !important; 
+  color: white !important; 
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  
 }
 
 
@@ -58,24 +71,40 @@ html {
   }
 }
 
-.CalendarPage {
-  margin: 0% 2%;
-  padding: 20px;
-  width: 100%;
+.CalendarPage{
+  margin : 0% 2%;
+  padding : 20px;
+  width:100%;
 }
-.react-calendar {
+
+.react-calendar__tile--now {
+  background: #282c34 !important;
+  color: white !important;
+}
+
+.react-calendar__tile--active:enabled:focus, .react-calendar__tile--active{
+  background: beige !important;
+  color: black !important;
+}
+
+.react-calendar__tile:enabled:hover{
+  background: beige !important;
+  color: black !important;
+}
+
+.react-calendar{
   padding: 30px !important;
   font-size: 1.4rem !important;
-  width: 50% !important;
+  width:100% !important;
   background-color: rgba(226, 199, 199, 0.1) !important;
   color: beige !important;
   border: none !important;
 }
 
-.timeContainer {
-  margin: 0% 0%;
-  padding: 30px;
-  width: 50%;
+.timeContainer{
+  margin : 0% 0%;
+  padding : 30px;
+  width:100%;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -85,10 +114,11 @@ html {
   text-transform: uppercase;
 }
 
-.guestsNumber {
-  margin: 0% 0%;
-  padding: 30px;
-  width: 50%;
+
+.guestsNumber{
+  margin : 0% 0%;
+  padding : 30px;
+  width:80%;
   font-size: 1.6rem;
   display: flex;
   background-color: rgba(226, 199, 199, 0.1);
@@ -97,52 +127,68 @@ html {
   text-transform: uppercase;
 }
 
-.timeContainer Button {
-  width: 100px;
-  margin: 20px 20px;
-  font-size: 1.6rem;
+.timeContainer Button{
+width: 100px;
+margin: 20px 20px;
+font-size: 1.6rem;
 }
 
-.lunchTime,
-.eveningTime {
-  margin: 30px 0px;
+.lunchTime, .eveningTime{
+  margin:30px 0px;
   text-align: left;
 }
 
+
+
+
+
+
+
 /*for list reservations _________________________*/
 
-.cardContainer {
+.cardContainer{
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
+  padding:10px;
   border-radius: 2px;
 }
 
-.card {
-  width: 200px;
+.card{
+  width:200px;
   padding: 10px;
-  margin: 10px 5px;
-  background-color: aliceblue;
+  margin : 10px 5px;
+  background-color: grey;
 }
 
-.cardCheckBooking {
-  width: 250px;
+.cardCheckBooking{
+  /* width:250px; */
   padding: 10px;
-  margin: 10px 5px;
-  background-color: aliceblue;
+  margin : 10px 5px;
+  background-color: transparent;
+  border: 1px solid beige;
+}
+
+.cardCheckBooking__button{
+  color: beige !important;
+  border: 1px solid beige !important;
+  background-color: black !important;
 }
 
 /*for form________________________*/
 
-.formPage {
+.formPage{
   display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.5);
+  flex-wrap: nowrap;
   padding: 10px;
-  width: 30%;
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px #61dafb;
+  width: 50%;
+  border: 1px solid beige;
+  color: beige;
+  flex-direction: column;
+  align-content: center;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 
