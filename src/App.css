@@ -10,6 +10,10 @@ body, html {
   margin: 0;
 
 }
+
+.errorLabel {
+  color: red;
+}
 .bodyContainer{
     /* The image used */
     background-image: url(./image/restaurant.jpg); 

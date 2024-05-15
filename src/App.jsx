@@ -2,12 +2,15 @@ import './App.css';
 import ListeReservations from './components/fetchReservations.jsx';
 import { useState, useEffect } from 'react';
 import CalendarPage from './components/CalendarPage.jsx';
+import LoginPage from './Auth/LoginPage.jsx';
 import { Progress } from '@chakra-ui/react';
 import MenuContainer from './components/MenuComp.jsx';
 import background from "./image/background_cake.jpg";
-import TabComponent from './components/Tab.jsx';
+//import TabComponent from './components/Tab.jsx';
 import StepperComponent from './components/Stepper.jsx';
 import { useRef } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   const [reservationData, setReservationData] = useState(() => {
@@ -35,15 +38,22 @@ function App() {
 
 
   return (
+    <Router>
     <div className="App">
       <header>
         <MenuContainer />
       </header>
 
-      <body className="bodyContainer" style={{ back: `url(${background})`}}>
-        <StepperComponent />
-      </body>
+      <main className="bodyContainer" style={{ back: `url(${background})`}}>
+
+      <Routes>
+            <Route path="/" element={<StepperComponent />} />
+            <Route path="/login" element={<LoginPage />} />
+          </Routes>
+ 
+      </main>
     </div>
+    </Router>
   );
 }
 
