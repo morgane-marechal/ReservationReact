@@ -17,12 +17,14 @@ import ListeReservations from './fetchReservations.jsx';
 import FormReservation from './FormReservation.jsx';
 import AlertDispo from './AlertDispo.jsx';
 import GuestsSelection from './GuestsSelection.jsx';
+import FormContact from './FormContact.jsx';
 
 function StepperComponent() {
     const steps = [
         { title: 'Choisir un jour' },
         { title: 'Choisir une heure' },
         { title: 'Nombre de personnes' },
+        { title: 'Coordonnees' },
         { title: 'Finalisation' },
     ];
 
@@ -73,6 +75,11 @@ function StepperComponent() {
                     </>
                 )}
                 {activeStep === 3 && (
+                    <>
+                        {<FormContact /> }
+                    </>
+                )}
+                {activeStep === 4 && (
                     <>
                         <FormReservation />
                         <AlertDispo />

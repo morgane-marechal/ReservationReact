@@ -15,8 +15,8 @@ const FormReservation = () => {
     // };
 
     const newReservation = {
-      email: "eudinbourd@proton.net",
-      name: 'Jean Eude',
+      email: localStorage.getItem('guestEmail'),
+      name: localStorage.getItem('guestName'),
       customernumber: localStorage.getItem('guestNumber'),
       date: localStorage.getItem('date'),
       time: localStorage.getItem('time')
@@ -33,8 +33,10 @@ const FormReservation = () => {
       if (!response.ok) {
         throw new Error('Failed to create reservation');
       }
-      setSuccess('Réservation au nom de '+newReservation.name+ ' le '+ newReservation.date+' à '+newReservation.time)
+      setSuccess('Réservation au nom de '+newReservation.name+'. Le '+ newReservation.date+' à '+newReservation.time+' réussie ! ');
       console.log('vous avez réservé pour '+newReservation.name+ ' le '+ newReservation.date+' à '+newReservation.time);
+
+
     } catch (error) {
       console.error('Error creating reservation:', error);
       // Gérer les erreurs
@@ -44,7 +46,10 @@ const FormReservation = () => {
 
   return (
     <div className="formPage">
-      <span>Est-ce que ces informations sont correctes ?</span>
+      <span>Résumé de votre réservation : </span>
+      <span>Au nom de : {localStorage.getItem('guestName')} </span>
+      <span>Le  {localStorage.getItem('date')} à {localStorage.getItem('time')} pour {localStorage.getItem('guestNumber')}</span>
+
       <div>{success}</div>
       <form  className="formPage" onSubmit={handleSubmit}>
         <button type="submit">Valider la réservation</button>
