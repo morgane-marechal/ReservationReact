@@ -127,6 +127,19 @@ body, html {
   text-transform: uppercase;
 }
 
+.buttonSelected{
+  margin : 0% 0%;
+  padding : 30px;
+  width:80%;
+  font-size: 1.6rem;
+  display: flex;
+  font-weight: 900;
+  background-color: rgba(102, 61, 8, 0.6);
+  align-items: flex-start;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .timeContainer Button{
 width: 100px;
 margin: 20px 20px;
