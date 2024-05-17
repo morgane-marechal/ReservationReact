@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Text,Input, Button } from '@chakra-ui/react'
 
 import '.././App.css';
@@ -12,7 +12,10 @@ function GuestsSelection() {
   const [value, onChange] = useState();
   const [guestNum, setGuestNum] = useState("");
 
-//   console.log('au click : '+value);
+  useEffect(()=> {
+    console.log(guestNum,'guestNum')
+  },[guestNum])
+
   function addGuest(value){
     localStorage.setItem('guestNumber', value);
     console.log('nombre invités :'+value);

@@ -7,15 +7,14 @@ import 'react-calendar/dist/Calendar.css';
 
 function AlertDispo() {
     const [placeDispo, setPlaceDispo] = useState([]); //nombre limite de tables de 2 modulables
-    const [message, setMessage] = useState(['Ce restaurant peur accueillir 100 couverts']); //nombre limite de tables de 2 modulables
+    const [message, setMessage] = useState(['Ce restaurant peut accueillir 100 couverts']); //nombre limite de tables de 2 modulables
 
-    // foction : ici on va aller chercher en bdd toute les resas qui sont à la date et à l'heure indiquée et soustraitre le nombre de personnes attendues
-    //sachant qu'un nombre impaire de personnes prendra ce nombre de table /2 +1.
+
 
     const checkBooked = async () => {
         const bookingTime = {
-            date: '2023-04-22',
-            time: '13:00:00'
+            date: localStorage.getItem('date').replace(/\//g, '-'),
+            time: localStorage.getItem('time')
         };
         try {
             const res = await fetch(`http://localhost:3001/bookingNumber/${bookingTime.date}/${bookingTime.time}`);
