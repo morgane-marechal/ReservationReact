@@ -34,6 +34,7 @@ function App() {
     localStorage.setItem('guestNumber', null);
     localStorage.setItem('nameCustomer', null);
     localStorage.setItem('email', null);
+    localStorage.setItem('reservationsNum', null);
   });
 
 
@@ -49,7 +50,7 @@ function App() {
       <Routes>
             <Route path="/" element={<StepperComponent />} />
             <Route path="/login" element={<LoginPage />} />
-          </Routes>
+      </Routes>
  
       </main>
     </div>

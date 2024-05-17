@@ -28,7 +28,7 @@ function MenuContainer() {
             Réservez une table !
         </MenuButton>
         <MenuList>
-            <MenuItem>Réservez !</MenuItem>
+            <MenuItem onClick={() => navigate('/')}>Réservez !</MenuItem>
             <MenuItem>Notre carte</MenuItem>
             <MenuItem>Faites-vous livrez !</MenuItem>
             <MenuItem onClick={() => navigate('/login')}>Connectez-vous</MenuItem>

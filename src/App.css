@@ -194,8 +194,8 @@ font-size: 1.6rem;
   display: flex;
   flex-wrap: nowrap;
   padding: 10px;
-  width: 50%;
-  border: 1px solid beige;
+  width: 100%;
+  /* border: 1px solid beige; */
   color: beige;
   flex-direction: column;
   align-content: center;
@@ -204,6 +204,11 @@ font-size: 1.6rem;
   align-items: center;
 }
 
+.inputLine{
+  margin:5px 2px;
+  display: flex;
+  justify-content: space-between;
+}
 
 /*for stepper*/
 
