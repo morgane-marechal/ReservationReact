@@ -1,5 +1,6 @@
 import './App.css';
 import ListeReservations from './components/fetchReservations.jsx';
+import AdminReservationsList from './components/AdminReservationsList.jsx';
 import { useState, useEffect } from 'react';
 import CalendarPage from './components/CalendarPage.jsx';
 import LoginPage from './Auth/LoginPage.jsx';
@@ -8,6 +9,7 @@ import MenuContainer from './components/MenuComp.jsx';
 import background from "./image/background_cake.jpg";
 //import TabComponent from './components/Tab.jsx';
 import StepperComponent from './components/Stepper.jsx';
+import AdminPage from './components/AdminPage.jsx';
 import { useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -50,6 +52,8 @@ function App() {
       <Routes>
             <Route path="/" element={<StepperComponent />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/admin" element={<AdminPage />} /> 
+          
       </Routes>
  
       </main>
