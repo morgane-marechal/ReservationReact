@@ -4,6 +4,8 @@ import * as React from 'react';
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import Admin from '../components/AdminPage';
+
 const Login = (props) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -37,7 +39,7 @@ const Login = (props) => {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/api/login', {
+      const response = await fetch('http://localhost:3002/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,6 +51,8 @@ const Login = (props) => {
 
       if (response.ok) {
         console.log('Login successful:', result);
+        localStorage.setItem('isConnected', true);
+        console.log(localStorage);
         navigate('/admin');
       } else {
         console.error('Login failed:', result);
