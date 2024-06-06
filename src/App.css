@@ -10,6 +10,19 @@ html {
   margin: 0;
 }
 
+
+.chakra-ui-light{
+  background-image: url(./image/restaurant.jpg);
+  background-color: black;
+  background-size: cover;
+
+  height: 100%;
+
+  background-position: right; 
+  background-repeat: no-repeat;
+  background-size: 50%; 
+}
+
 .errorLabel {
   color: red;
 }
@@ -21,9 +34,13 @@ html {
 
   height: 100%;
 
-  /*background-position: right; 
+  background-position: right; 
     background-repeat: no-repeat;
-    background-size: 50%;  */
+    background-size: 50%; 
+}
+
+.chakra-table css-1xc9of2 {
+  background-color: rgba(0, 0, 0, 0.308);
 }
 
 .white-text {
@@ -193,12 +210,17 @@ html {
   padding: 10px;
   width: 100%;
   /* border: 1px solid beige; */
-  color: beige;
+  color: rgb(255, 255, 247);
   flex-direction: column;
   align-content: center;
   margin: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.formPage input{
+  color: rgb(48, 48, 44);
+
 }
 
 .inputLine {
